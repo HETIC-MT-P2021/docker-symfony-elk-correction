@@ -1,0 +1,8 @@
+monolog:
+    handlers:
+        main_logger:
+            type: gelf
+            publisher:
+                hostname: '%logstash_gelf_host%'
+                port: '%logstash_gelf_port%'
+            level: debug
